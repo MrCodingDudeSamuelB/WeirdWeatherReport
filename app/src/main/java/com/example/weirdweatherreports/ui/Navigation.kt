@@ -1,4 +1,4 @@
-package com.example.weirdweatherreports
+package com.example.weirdweatherreports.ui
 
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
