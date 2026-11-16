@@ -22,65 +22,65 @@ import com.example.weirdweatherreports.models.WeeklyWeather
 
 @Composable
 fun TodayScreen() {
-    val weatherdaily = WeeklyWeather(
-        name = "Today",
-        resourceId = R.drawable.sun,
-        temperature = "Temperature: 23°C",
-        feelsLike = "Feels like: 26°C"
-    )
-
-    Column(
-        verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally,
-        modifier = Modifier
-            .fillMaxSize()
-            .padding(16.dp)
-    ) {
-        ElevatedCard(
-            modifier = Modifier.fillMaxWidth(),
-            shape = MaterialTheme.shapes.extraLarge
-        ) {
-            Column(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .padding(32.dp),
-                horizontalAlignment = Alignment.CenterHorizontally,
-                verticalArrangement = Arrangement.Center
-            ) {
-                Image(
-                    painter = painterResource(weatherdaily.resourceId),
-                    contentDescription = weatherdaily.name,
-                    modifier = Modifier.size(120.dp)
-                )
-
-                Spacer(modifier = Modifier.height(24.dp))
-
-                Text(
-                    text = weatherdaily.name,
-                    style = MaterialTheme.typography.headlineLarge,
-                    color = MaterialTheme.colorScheme.primary
-                )
-
-                Spacer(modifier = Modifier.height(12.dp))
-
-                if (weatherdaily.temperature.isNotEmpty()) {
-                    Text(
-                        text = weatherdaily.temperature,
-                        style = MaterialTheme.typography.titleMedium,
-                        color = MaterialTheme.colorScheme.onSurface
-                    )
-                }
-
-                Spacer(modifier = Modifier.height(4.dp))
-
-                if (weatherdaily.feelsLike.isNotEmpty()) {
-                    Text(
-                        text = weatherdaily.feelsLike,
-                        style = MaterialTheme.typography.bodyMedium,
-                        color = MaterialTheme.colorScheme.onSurfaceVariant
-                    )
-                }
-            }
-        }
-    }
+//    val weatherdaily = WeeklyWeather(
+//        name = "Today",
+//        resourceId = R.drawable.sun,
+//        temperature = "Temperature: 23°C",
+//        feelsLike = "Feels like: 26°C"
+//    )
+//
+//    Column(
+//        verticalArrangement = Arrangement.Center,
+//        horizontalAlignment = Alignment.CenterHorizontally,
+//        modifier = Modifier
+//            .fillMaxSize()
+//            .padding(16.dp)
+//    ) {
+//        ElevatedCard(
+//            modifier = Modifier.fillMaxWidth(),
+//            shape = MaterialTheme.shapes.extraLarge
+//        ) {
+//            Column(
+//                modifier = Modifier
+//                    .fillMaxWidth()
+//                    .padding(32.dp),
+//                horizontalAlignment = Alignment.CenterHorizontally,
+//                verticalArrangement = Arrangement.Center
+//            ) {
+//                Image(
+//                    painter = painterResource(weatherdaily.resourceId),
+//                    contentDescription = weatherdaily.name,
+//                    modifier = Modifier.size(120.dp)
+//                )
+//
+//                Spacer(modifier = Modifier.height(24.dp))
+//
+//                Text(
+//                    text = weatherdaily.name,
+//                    style = MaterialTheme.typography.headlineLarge,
+//                    color = MaterialTheme.colorScheme.primary
+//                )
+//
+//                Spacer(modifier = Modifier.height(12.dp))
+//
+//                if (weatherdaily.temperature.isNotEmpty()) {
+//                    Text(
+//                        text = weatherdaily.temperature,
+//                        style = MaterialTheme.typography.titleMedium,
+//                        color = MaterialTheme.colorScheme.onSurface
+//                    )
+//                }
+//
+//                Spacer(modifier = Modifier.height(4.dp))
+//
+//                if (weatherdaily.feelsLike.isNotEmpty()) {
+//                    Text(
+//                        text = weatherdaily.feelsLike,
+//                        style = MaterialTheme.typography.bodyMedium,
+//                        color = MaterialTheme.colorScheme.onSurfaceVariant
+//                    )
+//                }
+//            }
+//        }
+//    }
 }
