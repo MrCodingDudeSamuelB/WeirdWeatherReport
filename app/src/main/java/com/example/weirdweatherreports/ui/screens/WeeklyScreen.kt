@@ -35,6 +35,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import kotlin.math.roundToInt
 
+
 @Composable
 fun WeeklyScreen(
     weather: Weather?,
